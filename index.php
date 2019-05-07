@@ -3,4 +3,3 @@
     <input type="file" name="image" id="imaqe">
     <input type="submit" value="Upload Image" name="submit">
 </form>
-
