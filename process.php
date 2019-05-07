@@ -39,8 +39,9 @@ use MicrosoftAzure\Storage\Common\Exceptions\ServiceException;
 use MicrosoftAzure\Storage\Blob\Models\ListBlobsOptions;
 use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
 use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
-
-$connectionString = "DefaultEndpointsProtocol=https;AccountName=".getenv('ACCOUNT_NAME').";AccountKey=".getenv('ACCOUNT_KEY');
+$ACCOUNT_NAME = 'maedicodingwebapp';
+$ACCOUNT_KEY = 'cR//HiFPfQYRRlDekImE383AvBmT4oQuF+nc9VXAzEB27YAv63hgmHaA7ARHERyAInMGdFbOujIL9cC5WOQatw==';
+$connectionString = "DefaultEndpointsProtocol=https;AccountName=$ACCOUNT_NAME;AccountKey=ACCOUNT_KEY;
 
 // Create blob client.
 $blobClient = BlobRestProxy::createBlobService($connectionString);
