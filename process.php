@@ -46,7 +46,7 @@ $connectionString = "DefaultEndpointsProtocol=https;AccountName=$ACCOUNT_NAME;Ac
 // Create blob client.
 $blobClient = BlobRestProxy::createBlobService($connectionString);
 
-if(isset($_FILES['image'])){
+if(isset($_FILES["image"])){
 $errors= array();
     $file_name = $_FILES['image']['name'];
     $file_size = $_FILES['image']['size'];
@@ -66,7 +66,6 @@ $errors= array();
       
     if(empty($errors)==true){
         // Create container options object.
-	    	echo "Hi"
 		$createContainerOptions = new CreateContainerOptions();
 
 		// Set public access policy. Possible values are
