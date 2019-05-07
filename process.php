@@ -32,7 +32,6 @@
 #
 **/
 require_once 'vendor/autoload.php';
-//require_once "./random_string.php";
 
 use MicrosoftAzure\Storage\Blob\BlobRestProxy;
 use MicrosoftAzure\Storage\Common\Exceptions\ServiceException;
@@ -107,7 +106,6 @@ $errors= array();
 
 			// List blobs.
 			$listBlobsOptions = new ListBlobsOptions();
-			// $listBlobsOptions->setprefix("D");
 
 			echo "These are the blobs present in the container: ";
 			echo "<br />";
@@ -171,7 +169,7 @@ $errors= array();
 						echo "<pre>" . $ex . "</pre>";
 					}
 					//END OF AZURE VISION
-		        }
+		        	}
         
 				$listBlobsOptions->setContinuationToken($result->getContinuationToken());
 			} while($result->getContinuationToken());
