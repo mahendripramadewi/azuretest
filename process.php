@@ -125,8 +125,8 @@ $errors= array();
 					// You must use the same location in your REST call as you used to obtain
 					// your subscription keys. For example, if you obtained your subscription keys
 					// from westus, replace "westcentralus" in the URL below with "westus".
-					$uriBase = 'http://southeastasia.api.cognitive.microsoft.com/vision/v2.0/analyze';
-
+					$uriBase = 'https://southeastasia.api.cognitive.microsoft.com/vision/v2.0/analyze';
+echo "Hi";
 					require_once 'HTTP/Request2.php';
 
 					$request = new Http_Request2($uriBase);
