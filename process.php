@@ -88,7 +88,7 @@ $errors= array();
 		$createContainerOptions->addMetaData("key2", "value2");
 
 		// $containerName = "blockblobs".generateRandomString();
-        	$containerName = "image";
+        	$containerName = "imageupload";
 		try {
 			// Create container.
 			//$blobClient->createContainer($containerName, $createContainerOptions);
