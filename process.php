@@ -46,7 +46,6 @@ $connectionString = "DefaultEndpointsProtocol=https;AccountName=$ACCOUNT_NAME;Ac
 // Create blob client.
 $blobClient = BlobRestProxy::createBlobService($connectionString);
 
-
 if(isset($_FILES['image'])){
     $errors= array();
     $file_name = $_FILES['image']['name'];
