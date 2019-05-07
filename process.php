@@ -41,7 +41,7 @@ use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
 use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 $ACCOUNT_NAME = 'maedicodingwebapp';
 $ACCOUNT_KEY = 'cR//HiFPfQYRRlDekImE383AvBmT4oQuF+nc9VXAzEB27YAv63hgmHaA7ARHERyAInMGdFbOujIL9cC5WOQatw==';
-$connectionString = "DefaultEndpointsProtocol=https;AccountName=$ACCOUNT_NAME;AccountKey=ACCOUNT_KEY;
+$connectionString = "DefaultEndpointsProtocol=http;AccountName=$ACCOUNT_NAME;AccountKey=ACCOUNT_KEY;
 
 // Create blob client.
 $blobClient = BlobRestProxy::createBlobService($connectionString);
