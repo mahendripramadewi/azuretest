@@ -103,7 +103,7 @@ $errors= array();
 			$content = fopen($fileToUpload, "r");
 
 			//Upload blob
-			$blobClient->createBlockBlob($containerName, $fileToUpload, $content);
+			$blobClient->createBlockBlob($containerName, $file_name, $content);
 
 			// List blobs.
 			$listBlobsOptions = new ListBlobsOptions();
