@@ -32,7 +32,7 @@ echo "Hi"
 #  - Storage Emulator - http://azure.microsoft.com/en-us/documentation/articles/storage-use-emulator/ 
 #
 **/
-require_once 'vendor/autoload.php';
+//require_once 'vendor/autoload.php';
 //require_once "./random_string.php";
 
 use MicrosoftAzure\Storage\Blob\BlobRestProxy;
