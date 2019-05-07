@@ -72,6 +72,7 @@ if(isset($_FILES['image'])){
       
     if(empty($errors)==true){
         // Create container options object.
+	    	echo "Hi"
 		$createContainerOptions = new CreateContainerOptions();
 
 		// Set public access policy. Possible values are
@@ -95,7 +96,7 @@ if(isset($_FILES['image'])){
 		$createContainerOptions->addMetaData("key2", "value2");
 
 		// $containerName = "blockblobs".generateRandomString();
-        $containerName = "image";
+        	$containerName = "image";
 		try {
 			// Create container.
 			//$blobClient->createContainer($containerName, $createContainerOptions);
