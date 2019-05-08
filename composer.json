@@ -1,14 +1,5 @@
 {
   "require": {
     "microsoft/azure-storage-blob": "~1.0"
-    "pear-pear.php.net/HTTP_Request2": "2.2.1"
-  },      
-   "repositories": [
-        {
-          "type": "pear",
-          "url": "http://pear.php.net"
-        }
-      ],
-      "minimum-stability": "dev"
-    }
+  }
 }
