@@ -127,7 +127,7 @@ $errors= array();
 					// from westus, replace "westcentralus" in the URL below with "westus".
 					$uriBase = 'https://southeastasia.api.cognitive.microsoft.com/vision/v2.0/analyze';
 echo "Hi";
-					require_once 'HTTP/Request2.php';
+					//require_once 'HTTP/Request2.php';
 
 					$request = new Http_Request2($uriBase);
 					$url = $request->getUrl();
